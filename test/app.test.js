@@ -15,4 +15,10 @@ test('Debería retornar la matrícula del estudiante: "2021-1899', async () => {
    const response = await request(app).get("/matricula-estudiante");
    await expect(response.text).toBe("2021-1899");
 });
+
+test('Debe poder Poder realizar el merge', async () => {
+   const response = await request(app).get("/matricula-estudiante");
+   await expect(response.text).toBe("Se realizó el merge correctamente");
+});
+
 jest.useFakeTimers();
