@@ -14,5 +14,9 @@ app.get("/matricula-estudiante", (req, res) => {
    res.send("2021-1899");
 });
 
+app.get("/prueba-merge", (req, res) => {
+   res.send("Se realizó el merge correctamente");
+});
+
 
 module.exports = app; 
