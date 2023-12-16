@@ -1,13 +1,9 @@
 const request = require("supertest");
 const app = require("../src/app");
-const { afterAll, beforeAll } = require("jest-circus");
-
-
- 
 
 test('Debería retornar "Hola Mundo!, Esto es una prueba JEST', async () => {
    const response = await request(app).get("/");
-   await expect(response.text).toBe("Error");
+   await expect(response.text).toBe("Hola Mundo!, Esto es una prueba JEST");
 });
 
 test('Debería retornar el nombre del estudiante: "Cristian Eulises Sanchez Ramirez', async () => {
