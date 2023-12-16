@@ -17,7 +17,7 @@ test('Debería retornar la matrícula del estudiante: "2021-1899', async () => {
 });
 
 test('Debe poder Poder realizar el merge', async () => {
-   const response = await request(app).get("/matricula-estudiante");
+   const response = await request(app).get("/prueba-merge");
    await expect(response.text).toBe("Se realizó el merge correctamente");
 });
 
