@@ -15,7 +15,7 @@ app.get("/matricula-estudiante", (req, res) => {
 });
 
 app.get("/prueba-merge", (req, res) => {
-   res.send("No se hacer merge");
+   res.send("Se realizó el merge correctamente");
 });
 
 
